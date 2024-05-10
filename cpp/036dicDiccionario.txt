@@ -1,0 +1,50 @@
+#include <iostream>
+#include <list>
+#include <cstdlib>
+#include <algorithm>
+#include <thread>
+#include <chrono>
+#include <map>
+using namespace std;
+
+struct Empleado {
+    string nombre;
+    string edad;
+    string puesto;
+};
+
+int main() {
+    map<string, Empleado> empleados = {
+        {"001", {"juan", "30", "Administrador"}},
+        {"002", {"maria", "25", "Analista"}},
+        {"003", {"Pedro", "35", "Desarrollador"}}
+    };
+
+    cout << "Nombre: " << empleados["002"].nombre << endl;
+    cout << "Edad: " << empleados["002"].edad << endl;
+    cout << "Puesto: " << empleados["002"].puesto << endl;
+
+    cout << "\nInformacion de todos los empleados: \n";
+    for(auto it : empleados) {
+        cout << "codigo: " << it.first << endl;
+        cout << "nombre: " << it.second.nombre << endl;
+        cout << "edad: " << it.second.edad << endl;
+        cout << "puesto: " << it.second.puesto << endl;
+        cout << "--------------------" << endl;
+    }
+
+    cout << "Agregamos el empleado con clave 004...\n";
+    empleados["004"] = {"Laura", "28", "Diseniadora"};
+
+    cout << "\nInformacion de todos los empleados: \n";
+    for(auto it : empleados) {
+        cout << "codigo: " << it.first << endl;
+        cout << "nombre: " << it.second.nombre << endl;
+        cout << "edad: " << it.second.edad << endl;
+        cout << "puesto: " << it.second.puesto << endl;
+        cout << "--------------------" << endl;
+    }
+
+    
+    return 0;
+}
