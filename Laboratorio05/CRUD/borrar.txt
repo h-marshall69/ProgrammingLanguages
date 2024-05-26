@@ -1,0 +1,11 @@
+CREATE DATABASE sistemas;
+USE sistemas;
+
+CREATE TABLE personas (
+    dni varchar(8) NOT NULL,
+    nombres varchar(50) NOT NULL,
+    apellidopa varchar(50) NOT NULL,
+    apellidoma varchar(50) NOT NULL
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+ALTER TABLE persona ADD PRIMARY KEY (dni);  

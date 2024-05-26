@@ -1,0 +1,7 @@
+.min-w-full { width: 100%; }
+.bg-white { background-color: white; }
+.border-b { border-bottom: 1px solid #ddd; }
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.text-blue500 { color: blue; }
+.text-red500 { color: red; }
