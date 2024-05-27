@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+
+public class PentavocalicDetector
+{
+    private HashSet<char> vowels;
+
+    public PentavocalicDetector()
+    {
+        vowels = new HashSet<char> { 'a', 'e', 'i', 'o', 'u' };
+    }
+
+    public bool IsPentavocalic(string word)
+    {
+        HashSet<char> wordSet = new HashSet<char>(word.ToLower());
+        return vowels.IsSubsetOf(wordSet);
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Ingrese una palabra:");
+        string word = Console.ReadLine();
+        PentavocalicDetector detector = new PentavocalicDetector();
+        if (detector.IsPentavocalic(word))
+        {
+            Console.WriteLine($"La palabra '{word}' es pentavocalica.");
+        }
+        else
+        {
+            Console.WriteLine($"La palabra '{word}' no es pentavocalica.");
+        }
+    }
+}
