@@ -7,7 +7,7 @@ int main() {
     size_t subCadena = mensaje.find("EPIS");
 
     if (subCadena != string::npos) {
-        cout << "\nLa subcadena buscada está en la posición: " << subCadena << endl;
+        cout << "\nLa subcadena buscada esta en la posicion: " << subCadena << endl;
     } else {
         cout << "\nLa subcadena no fue encontrada." << endl;
     }

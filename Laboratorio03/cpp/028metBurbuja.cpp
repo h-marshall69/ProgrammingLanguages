@@ -8,10 +8,10 @@ using namespace std;
 int main() {
     int datos [] = {55, 300, 27, 12, 9, 15};
     cout << "El arreglo original es: ";
-    for(int i = 0; i < size(datos); i++)
+    int n = sizeof(datos) / sizeof(datos[0]); // Obtener el tamaño del arreglo correctamente
+    for(int i = 0; i < n; i++) // Corregir el bucle para usar el tamaño correcto
         cout << datos[i] << " ";
     cout << endl;
-    int n = size(datos);
     for(int i = 0; i < n - 1; i++) {
         for(int j = 0; j < n - 1 - i; j++) {
             cout << "i vale: " << i << " Y " << "j vale: " << j << endl;
@@ -22,8 +22,8 @@ int main() {
             }
         }
     }
-    cout << "El arreglo ordenado es: ";
-    for(int i = 0; i < size(datos); i++)
+    cout << "/nEl arreglo ordenado es: ";
+    for(int i = 0; i < n; i++)
         cout << datos[i] << " ";
     return 0;
 }

@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     string mensaje = "Bienvenidos";
     mensaje += " a";// mensaje = mensaje + ' a'
-    mensaje += " Python";
+    mensaje += " C++";
     cout << mensaje << endl;
     return 0;
 }

@@ -10,11 +10,11 @@ int main() {
     cout << "Escribe tu nombre: ";
     cin >> nombre;
     float mat, fis, quim;
-    cout << "Escribe tu nombre de Matematicas: ";
+    cout << "Escribe tu nota de Matematicas: ";
     cin >> mat;
-    cout << "Escribe tu nombre de Fisica: ";
+    cout << "Escribe tu nota de Fisica: ";
     cin >> fis;
-    cout << "Escribe tu nombre de Quimica: ";
+    cout << "Escribe tu nota de Quimica: ";
     cin >> quim;
     /*
     prioridad de operaciones aritmeticos

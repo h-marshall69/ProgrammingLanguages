@@ -70,4 +70,5 @@ class Persona
         return $result['total'];
     }
 }
+
 ?>

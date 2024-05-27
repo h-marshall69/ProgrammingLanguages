@@ -39,12 +39,11 @@ actualizar la persona.</div>";
         ?>
         <form action="update.php" method="post" class="bg-white p-6 rounded
 shadow-md">
-            <input type="hidden" id="dni" name="dni" value="<?php echo
-                                                            isset($row['dni']) ? $row['dni'] : ''; ?>" class="border p-2 w-full mb-4">
+            <label for="dni" class="block">Dni:</label>
+            <input type="text" id="dni" name="dni" value="<?php echo isset($row['dni']) ? $row['dni'] : ''; ?>" class="border p-2 w-full mb-4">
             <label for="nombres" class="block">Nombres:</label>
             <input type="text" id="nombres" name="nombres" value="<?php echo
-                                                                    isset($row['nombres']) ? $row['nombres'] : ''; ?>" class="border p-2 w-full
-mb-4">
+                                                                    isset($row['nombres']) ? $row['nombres'] : ''; ?>" class="border p-2 w-full mb-4">
             <label for="apellidopa" class="block">Apellido Paterno:</label>
             <input type="text" id="apellidopa" name="apellidopa" value="<?php echo isset($row['apellidopa']) ? $row['apellidopa'] : ''; ?>" class="border p-2 w-full mb-4">
             <label for="apellidoma" class="block">Apellido Materno:</label>

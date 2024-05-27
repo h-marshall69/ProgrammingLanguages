@@ -10,7 +10,7 @@ using namespace std;
 int main() {
     string mensaje1 = "Bienvenidos";
     string mensaje2 = " a";
-    string mensaje3 = "C++";
+    string mensaje3 = " C++";
     //cout << mensaje1, mensaje2, mensaje3 << endl;
     cout << mensaje1 << mensaje2 << mensaje3 << endl;
     return 0;
